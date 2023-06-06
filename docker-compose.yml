@@ -27,7 +27,7 @@ services:
       POSTGRES_PASSWORD: 1234
       POSTGRES_DB: choco
     volumes:
-      - chocoPgData:/var/lib/postgresql/data
+      - managerDbData:/var/lib/postgresql/data
     ports:
       - "7232:5432"
     networks:
@@ -35,7 +35,7 @@ services:
 
 
 volumes:
-  chocoPgData:
+  managerDbData:
     
 networks:
   net:
